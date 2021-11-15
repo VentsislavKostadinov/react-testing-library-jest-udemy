@@ -6,11 +6,14 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 
+
+});
+
+test('visible paragraph', () => {
+
+  render(<App />);
+
   const para = screen.getByTestId('paragraph');
   expect(para).toBeVisible();
 
-
-
-
-
-});
+})
